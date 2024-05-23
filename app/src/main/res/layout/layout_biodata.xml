@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="5dp"
+    app:cardBackgroundColor="@color/background"
+    android:layout_margin="5dp"
+    app:strokeColor="@color/secondbg"
+    android:id="@+id/cardView">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvnama"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/mada_medium"
+                android:padding="2dp"
+                android:text="NAMA"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvnim"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="NIM"
+                android:padding="1dp"
+                android:visibility="gone"
+                android:fontFamily="@font/inter_medium"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tvttl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/inter_medium"
+                android:text="TTL"
+                android:visibility="gone"
+                android:padding="1dp"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tvalamat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ALAMAT"
+                android:visibility="gone"
+                android:padding="1dp"
+                android:fontFamily="@font/inter_medium"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:layout_marginBottom="5dp"/>
+
+
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button"
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:text="SHOW"
+                android:textSize="12sp"
+                android:layout_marginTop="2dp"
+                android:textColor="@color/text"
+                android:background="@drawable/rounded_button"
+                />
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/ivBiodata"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:layout_weight="0.5"
+            android:scaleType="centerCrop"
+            android:src="@drawable/blankprofile"
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/btnLink"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:visibility="gone"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/wa"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_weight="0.5"
+            android:text="@string/whatsapp"
+            android:paddingHorizontal="40dp"
+            android:drawableStart="@drawable/btn_wa"
+            android:textSize="12sp"
+            android:background="@drawable/button_custom"
+            android:textColor="@color/text"
+            />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/ig"
+            android:layout_width="wrap_content"
+            android:layout_weight="0.5"
+            android:layout_height="40dp"
+            android:text="@string/instagram"
+            android:paddingHorizontal="40dp"
+            android:drawableStart="@drawable/btn_ig"
+            android:textSize="12sp"
+            android:textAlignment="center"
+            android:background="@drawable/button_custom"
+            android:textColor="@color/text"
+            />
+
+
+
+
+
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

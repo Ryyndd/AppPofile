@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/aset"/>
+    <gradient android:startColor="@color/aset" android:endColor="@color/purple_500" /><!-- Warna background -->
+    <corners android:radius="13dp"/> <!-- Radius sudut -->
+</shape>
